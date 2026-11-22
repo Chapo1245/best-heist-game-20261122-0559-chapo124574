@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moonlit Vault — a 3-heist stealth game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moonlit Vault: 3 heists, 9 guards, 27 treasures, 3 gadgets. Cross the room unseen, dodge vision cones and cameras, grab the loot, and vanish before the alarm hits 100.">
+<style>
+  html, body { margin: 0; padding: 0; background: #07080f; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center;
+         font-family: "Segoe UI", system-ui, sans-serif; color: #cfd3e6; }
+  #wrap { text-align: center; }
+  canvas { display: block; border: 2px solid #3a3f5c; border-radius: 10px;
+           box-shadow: 0 0 60px rgba(90, 120, 255, 0.18); background: #0b0e1a; }
+  #hint { margin: 10px 0 0; font-size: 13px; letter-spacing: 0.4px; color: #8d93ad; }
+  #hint b { color: #ffd76a; font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <p id="hint"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>E</b> grab loot &nbsp;·&nbsp; <b>1</b> coin toss &nbsp;·&nbsp; <b>2</b> smoke veil &nbsp;·&nbsp; <b>3</b> jam cameras &nbsp;·&nbsp; <b>Click</b> toss coin there &nbsp;·&nbsp; <b>M</b> mute</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
